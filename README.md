@@ -157,3 +157,7 @@ Assemble project
 Move to **your_path/FilliEx/build/**. Open in browser this file: **example.html**
 
 ![src/resources/img/example.png](./src/main/resources/img/example.png)
+
+-----
+
+![Site](https://ivanzar.github.io/Fillipost/index.html)
