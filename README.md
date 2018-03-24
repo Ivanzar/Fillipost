@@ -1,4 +1,4 @@
-# Fillipost
+# [Fillipost](https://ivanzar.github.io/Fillipost/index.html)
 ## What is it?
 Fillipost is a simple open-source static sites generator for personal, project or organization sites. Written in Java by Ivanzar.
 
@@ -160,4 +160,4 @@ Move to **your_path/FilliEx/build/**. Open in browser this file: **example.html*
 
 -----
 
-![Site](https://ivanzar.github.io/Fillipost/index.html)
+[Site](https://ivanzar.github.io/Fillipost/index.html)
