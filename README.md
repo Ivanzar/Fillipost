@@ -155,3 +155,5 @@ Assemble project
 #### Windows:
 ```$ fillipost-cli.bat build your_path/FilliEx```
 Move to **your_path/FilliEx/build/**. Open in browser this file: **example.html**
+
+![src/resources/img/example.png](./src/resources/img/example.png)
