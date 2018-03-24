@@ -1,0 +1,33 @@
+group 'ivanzar'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'me.ivanzar.Main'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'Fillipost'
+    version =  '0.1.0'
+
+//    from {
+//        (configurations.runtime).collect {
+//            it.isDirectory() ? it : zipTree(it)
+//        }
+//    }
+}
+
+dependencies {
+    compile files("libs/lombok.jar")
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.2'
+    compile 'nl.big-o:liqp:0.7.2'
+    compile 'com.atlassian.commonmark:commonmark:0.11.0'
+    compile 'com.atlassian.commonmark:commonmark-ext-gfm-tables:0.11.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
