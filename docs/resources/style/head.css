@@ -1,0 +1,32 @@
+#page-head {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+#page-head--title {
+	background-color: #3F51B5;
+	height: 50px;
+	color: white;
+	line-height: 50px;
+	text-indent: 10px;
+}
+
+#page-head--title h3 {
+	margin-top: 0px;
+}
+
+#page-head--link {
+	background-color: #1A237E;
+	height: 50px;
+	color: white;
+	line-height: 50px;
+	text-indent: 10px;
+}
+
+#page-head--link a {
+	text-decoration: none;
+	color: white;
+	padding-left: 10px; 
+}

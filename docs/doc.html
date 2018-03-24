@@ -1,0 +1,86 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./resources/style/main.css">
+
+<link rel="stylesheet" type="text/css" href="./resources/style/head.css">
+
+<div id="page-head">
+	<div id="page-head--title"><h3>Fillipost</h3></div>
+	<div id="page-head--link">
+	<a href="./index.html">О проекте</a>
+	<a href="./doc.html">Документация</a>
+	<a href="./example.html">Пример</a>
+	<a href="https://github.com/Ivanzar/Fillipost">GitHub</a></div>
+</div>
+
+
+<div id="page-content"><h1>Документация</h1>
+<h2>Создание проекта</h2>
+<h4>Linux:</h4>
+<p><code>$ fillipost-cli create &lt;project path&gt;</code></p>
+<h4>Windows:</h4>
+<p><code>$ fillipost-cli.bat create &lt;project path&gt;</code></p>
+<h2>Сборка проекта</h2>
+<h4>Linux:</h4>
+<p><code>$ fillipost-cli build &lt;project path&gt;</code></p>
+<h4>Windows:</h4>
+<p><code>$ fillipost-cli.bat build &lt;project path&gt;</code></p>
+<hr />
+<h2>Команды</h2>
+<table>
+<thead>
+<tr><th></th><th></th><th></th><th></th></tr>
+</thead>
+<tbody>
+<tr><td><strong>build <code>&lt;project path&gt;</code> <code>[flag]</code></strong></td><td> Сборка проекта - генерация статических страниц.</td><td> Флаги:</td><td></td></tr>
+<tr><td></td><td></td><td>  --resources</td><td>Сборка только ресурсов (папка resources)</td></tr>
+<tr><td></td><td></td><td>  --post [post file]</td><td>Сборка отдельного поста (папка posts)</td></tr>
+<tr><td></td><td></td><td>  --posts-only</td><td>Сборка только постов (папка posts)</td></tr>
+<tr><td><strong>create <code>&lt;project path&gt;</code></strong></td><td> Создание нового проекта.</td><td></td><td></td></tr>
+<tr><td><strong>clean <code>&lt;project path&gt;</code></strong></td><td> Удаляет деррикторию <code>project path/build</code>.</td><td></td><td></td></tr>
+</tbody>
+</table>
+<h2>Строение дериктории проекта</h2>
+<ul>
+<li><em><strong>project path</strong></em>  нзавние дерриктории проекта
+<ul>
+<li><em><strong>build</strong></em>   дериктороия со сгенерированными старницами и ресурсами</li>
+<li><em><strong>patterns</strong></em>   дериктория с шаблоанми</li>
+<li><em><strong>posts</strong></em>   дериктория со старницми в Markdown формате(назвние файлов должно оканчиваться на .md)</li>
+<li><em><strong>resources</strong></em> дерриктория с ресурасами проекта</li>
+<li><em><strong>snippets</strong></em>   шаблоны для вставки в код файлов дериктории patterns</li>
+</ul>
+</li>
+</ul>
+<h2>Шаблон старниц в дериктории post</h2>
+<p><strong><p style="color: green">---</p></strong></p>
+<pre><code>{
+  &quot;post&quot;: {
+    &quot;name&quot;: string,
+    &quot;author&quot;: string,
+    &quot;description&quot;: string,
+    &quot;pattern&quot;: string,
+    &quot;date&quot;: int
+  },
+  &quot;variable1&quot;: ,
+  &quot;variable2&quot;: ,
+  &quot;variable3&quot;: ,
+  &quot;variableN&quot;: 
+}
+</code></pre>
+<p><strong><p style="color: green">--- <p></strong></p>
+<p><strong><p style="color: #424242">Текст в Markdown формате<p></strong></p>
+<h4>Описание:</h4>
+<p><strong><code>---</code></strong> - начало заголовка</p>
+<p><strong><code>&quot;post&quot;</code></strong> - обязательное поле</p>
+<p><strong><code>&quot;name&quot;</code></strong> - название старницы, обязательно</p>
+<p><strong><code>&quot;author&quot;</code></strong> - имя автора, не обязательно</p>
+<p><strong><code>&quot;description&quot;</code></strong> - описание поста, не обязательно</p>
+<p><strong><code>&quot;pattern&quot;</code></strong> - шаблона для страницы(в папке <code>patterns</code>), обязательно</p>
+<p><strong><code>&quot;date&quot;</code></strong> - дата unix epo time, не обязательно</p>
+<p><strong><code>&quot;variable&quot;</code></strong> - другие поля, не обязательно</p>
+<p><strong><code>---</code></strong> - конец заголовка</p>
+</div>
