@@ -7,7 +7,7 @@ Fillipost provides an easy way to create own sites using the human-readable mark
 
 ## Commands
 
-|                                    |                                                 |             |                                          |
+| Command                            | Description                                     |             |                                          |
 |------------------------------------|-------------------------------------------------|-------------|------------------------------------------|
 | **build `<project path>` `[flag]`**  | &emsp;Assemble a project. | &emsp;Flags:      |                                          |
 |                                    |                                                 | &emsp;&emsp;--resources [post file] | Assemble resources (folder: `resources`) |
